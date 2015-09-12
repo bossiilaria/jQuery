@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title> Fade In An Image with jQuery</title>
+
+<!--Import jQuery in yout html-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!--When the document is ready the image, tagged with id 'fade', will fade in in 3000 ms -->
+
+<script>
+$(document).ready(function(){
+    
+        $("#fade").fadeIn(3000);
+});
+</script>
+</head>
+<body>
+<!--Create a div to wrap yout image and make sure there's no image when you start (this is what display none does)-->
+<div id="fade" style="width:80px;height:80px;display:none;"><img src="img/woman.jpg"></div>
+</body>
+</html>
